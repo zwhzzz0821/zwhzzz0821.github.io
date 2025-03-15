@@ -19,15 +19,15 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="这里写关于页的正文，支持 Markdown, HTML">
+    <meta name="description" content="Hello~这里是Yukimi 本科就读于宁波大学，保研至厦门大学，目前的研究方向是数据库 对C++&#x2F;Rust&#x2F;操作系统&#x2F;数据库&#x2F;存储&#x2F;分布式&#x2F;高性能计算有浓厚的兴趣，会记录自己学习笔记 如果您对我记录的内容感到有问题，欢迎批评指正">
 <meta property="og:type" content="website">
 <meta property="og:title" content="关于">
 <meta property="og:url" content="http://example.com/about/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="这里写关于页的正文，支持 Markdown, HTML">
+<meta property="og:description" content="Hello~这里是Yukimi 本科就读于宁波大学，保研至厦门大学，目前的研究方向是数据库 对C++&#x2F;Rust&#x2F;操作系统&#x2F;数据库&#x2F;存储&#x2F;分布式&#x2F;高性能计算有浓厚的兴趣，会记录自己学习笔记 如果您对我记录的内容感到有问题，欢迎批评指正">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-03-15T07:32:18.430Z">
-<meta property="article:modified_time" content="2025-03-15T07:32:18.430Z">
+<meta property="article:published_time" content="2025-03-15T13:07:57.004Z">
+<meta property="article:modified_time" content="2025-03-15T13:07:57.004Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -97,7 +97,7 @@
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <strong>Fluid</strong>
+      <strong>Yukimi的学习笔记</strong>
     </a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
@@ -232,31 +232,19 @@
 
 <div class="text-center">
   <div class="about-info">
-    <div class="about-name">Fluid</div>
-    <div class="about-intro">An elegant theme for Hexo</div>
+    <div class="about-name">Yukimi</div>
+    <div class="about-intro">Yukimi的个人博客(主要涉及存储/数据库/C++等的一些学习笔记)</div>
     <div class="about-icons">
       
         
         
         
-        <a href=https://github.com class="
+        <a href=https://github.com/zwhzzz0821 class="
            hint--bottom hint--rounded"
            aria-label="GitHub"
            target="_blank"
         >
           <i class="iconfont icon-github-fill" aria-hidden="true"></i>
-          
-        </a>
-      
-        
-        
-        
-        <a href=https://douban.com class="
-           hint--bottom hint--rounded"
-           aria-label="豆瓣"
-           target="_blank"
-        >
-          <i class="iconfont icon-douban-fill" aria-hidden="true"></i>
           
         </a>
       
@@ -270,7 +258,7 @@
         >
           <i class="iconfont icon-wechat-fill" aria-hidden="true"></i>
           
-            <img class="qr-img" src="/img/favicon.png" srcset="/img/loading.gif" lazyload alt="qrcode" />
+            <img class="qr-img" src="/img/qrcode.png" srcset="/img/loading.gif" lazyload alt="qrcode" />
           
         </a>
       
@@ -280,8 +268,11 @@
 
 <article class="about-content page-content mt-5">
   <div class="markdown-body">
-    <p>这里写关于页的正文，支持 Markdown, HTML</p>
-<hr>
+    <p>Hello~这里是Yukimi</p>
+<p>本科就读于宁波大学，保研至厦门大学，目前的研究方向是数据库</p>
+<p>对C++/Rust/操作系统/数据库/存储/分布式/高性能计算有浓厚的兴趣，会记录自己学习笔记</p>
+<p>如果您对我记录的内容感到有问题，欢迎批评指正</p>
+<hr />
 
   </div>
 
@@ -309,6 +300,12 @@
 
 
   
+
+
+  
+  
+
+
 
 
 
@@ -464,6 +461,49 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
